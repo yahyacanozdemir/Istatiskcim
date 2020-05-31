@@ -1,0 +1,1657 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="@drawable/morning">
+
+
+
+
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:background="@drawable/ui6"
+                android:id="@+id/modFullLY"
+                android:layout_width="300dp"
+                android:layout_height="450dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp">
+
+                <Button
+                    android:id="@+id/modBG"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="35dp"
+                    android:onClick="modOnclik"
+                    android:background="@drawable/mod"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.568"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.064"
+                    app:srcCompat="@drawable/mod" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/modOptionsLY"
+                    android:layout_width="300dp"
+                    android:layout_height="250dp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/modBG"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:visibility="visible">
+
+
+                    <EditText
+                        android:id="@+id/editTextMod"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:inputType="numberDecimal|numberSigned"
+                        android:textAlignment="center"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.19" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieOnaylaMod"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginStart="72dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="36dp"
+                        android:onClick="mod"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/lottieKaldirMod"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextMod"
+                        app:layout_constraintVertical_bias="0.205"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="onaylalottie.json"
+                        app:lottie_loop="true" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieKaldirMod"
+                        android:layout_width="95dp"
+                        android:layout_height="95dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="12dp"
+                        android:onClick="clearEditTexts"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextMod"
+                        app:layout_constraintVertical_bias="0.072"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="remove.json"
+                        app:lottie_loop="true" />
+
+
+                    <TextView
+                        android:id="@+id/modSonucTV"
+                        android:layout_width="184dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="124dp"
+                        android:gravity="center"
+                        android:text="Sonuc : 15.593234"
+                        android:textAlignment="center"
+                        app:layout_constraintEnd_toStartOf="@+id/lottieOnaylaMod"
+                        app:layout_constraintHorizontal_bias="0.613"
+                        app:layout_constraintStart_toEndOf="@+id/lottieKaldirMod"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextMod" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/diziGoster"
+                android:layout_width="350dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="500dp"
+                android:layout_marginLeft="-330dp"
+                android:textAlignment="center"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/medyanFullLY"
+                android:layout_width="300dp"
+                android:layout_height="450dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/ui6">
+
+                <Button
+                    android:id="@+id/medyanBG"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="35dp"
+                    android:background="@drawable/medyan"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.568"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.064"
+                    app:srcCompat="@drawable/medyan"
+                    android:onClick="medyanOnclik"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/medyanOptionsLY"
+                    android:layout_width="300dp"
+                    android:layout_height="250dp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/medyanBG"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <EditText
+                        android:id="@+id/editTextMedyan"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:inputType="numberDecimal|numberSigned"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.19" />
+
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieOnaylaMedyan"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginStart="72dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="36dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/lottieKaldirMedyan"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextMedyan"
+                        app:layout_constraintVertical_bias="0.205"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="onaylalottie.json"
+                        app:lottie_loop="true"
+                        android:onClick="medyan" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieKaldirMedyan"
+                        android:layout_width="95dp"
+                        android:layout_height="95dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextMedyan"
+                        app:layout_constraintVertical_bias="0.072"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="remove.json"
+                        app:lottie_loop="true"
+                        android:onClick="clearEditTexts"/>
+
+                    <TextView
+                        android:id="@+id/medyanSonucTV"
+                        android:layout_width="184dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="124dp"
+                        android:gravity="center"
+                        android:text="Sonuc : 15.593234"
+                        android:textAlignment="center"
+                        app:layout_constraintEnd_toStartOf="@+id/lottieOnaylaMedyan"
+                        app:layout_constraintHorizontal_bias="0.613"
+                        app:layout_constraintStart_toEndOf="@+id/lottieKaldirMedyan"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextMedyan" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/diziGoster2"
+                android:layout_width="350dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="500dp"
+                android:layout_marginLeft="-330dp"
+                android:textAlignment="center"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/aritmatikFullLY"
+                android:layout_width="300dp"
+                android:layout_height="450dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/ui6">
+
+                <Button
+                    android:id="@+id/aritmatikBG"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="35dp"
+                    android:background="@drawable/ao"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.56"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.045"
+                    app:srcCompat="@drawable/ao"
+                    android:onClick="aritmatikOnclik"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/aritmatikOptionsLY"
+                    android:layout_width="300dp"
+                    android:layout_height="250dp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/aritmatikBG"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <EditText
+                        android:id="@+id/editTextAritmatik"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:inputType="numberDecimal|numberSigned"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.19" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieOnaylaAritmatik"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginStart="72dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="36dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/lottieKaldirAritmatik"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextAritmatik"
+                        app:layout_constraintVertical_bias="0.205"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="onaylalottie.json"
+                        app:lottie_loop="true"
+                        android:onClick="aritmatikOrtalama"/>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieKaldirAritmatik"
+                        android:layout_width="95dp"
+                        android:layout_height="95dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextAritmatik"
+                        app:layout_constraintVertical_bias="0.072"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="remove.json"
+                        app:lottie_loop="true"
+                        android:onClick="clearEditTexts"/>
+
+                    <TextView
+                        android:id="@+id/aritmatikSonucTV"
+                        android:layout_width="184dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="124dp"
+                        android:gravity="center"
+                        android:text="Sonuc : 15.593234"
+                        android:textAlignment="center"
+                        app:layout_constraintEnd_toStartOf="@+id/lottieOnaylaAritmatik"
+                        app:layout_constraintHorizontal_bias="0.613"
+                        app:layout_constraintStart_toEndOf="@+id/lottieKaldirAritmatik"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextAritmatik" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/diziGoster3"
+                android:layout_width="350dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="500dp"
+                android:layout_marginLeft="-330dp"
+                android:textAlignment="center"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/HarmonikFullLY"
+                android:layout_width="300dp"
+                android:layout_height="450dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/ui6">
+
+                <Button
+                    android:id="@+id/harmonikBG"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="35dp"
+                    android:background="@drawable/ho"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.568"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.064"
+                    app:srcCompat="@drawable/ho"
+                    android:onClick="harmonikOnclik"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/harmonikOptionsLY"
+                    android:layout_width="300dp"
+                    android:layout_height="250dp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/harmonikBG"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <EditText
+                        android:id="@+id/editTextHarmonik"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:inputType="numberDecimal|numberSigned"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.19" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieOnaylaHarmonik"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginStart="72dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="36dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/lottieKaldirHarmonik"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextHarmonik"
+                        app:layout_constraintVertical_bias="0.205"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="onaylalottie.json"
+                        app:lottie_loop="true"
+                        android:onClick="harmonikOrtalama"/>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieKaldirHarmonik"
+                        android:layout_width="95dp"
+                        android:layout_height="95dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextHarmonik"
+                        app:layout_constraintVertical_bias="0.072"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="remove.json"
+                        app:lottie_loop="true"
+                        android:onClick="clearEditTexts"/>
+
+                    <TextView
+                        android:id="@+id/harmonikSonucTV"
+                        android:layout_width="184dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="124dp"
+                        android:gravity="center"
+                        android:text="Sonuc : 15.593234"
+                        android:textAlignment="center"
+                        app:layout_constraintEnd_toStartOf="@+id/lottieOnaylaHarmonik"
+                        app:layout_constraintHorizontal_bias="0.613"
+                        app:layout_constraintStart_toEndOf="@+id/lottieKaldirHarmonik"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextHarmonik" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/diziGoster4"
+                android:layout_width="350dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="500dp"
+                android:layout_marginLeft="-330dp"
+                android:textAlignment="center"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/geometrikFullLY"
+                android:layout_width="300dp"
+                android:layout_height="450dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/ui6">
+
+                <Button
+                    android:id="@+id/geometrikBG"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="35dp"
+                    android:background="@drawable/go"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.568"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.064"
+                    app:srcCompat="@drawable/go"
+                    android:onClick="geometrikOnclik"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/geometrikOptionsLY"
+                    android:layout_width="300dp"
+                    android:layout_height="250dp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/geometrikBG"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <EditText
+                        android:id="@+id/editTextGeometrik"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:inputType="numberDecimal|numberSigned"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.19" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieOnaylaGeometrik"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginStart="72dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="36dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/lottieKaldirGeometrik"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextGeometrik"
+                        app:layout_constraintVertical_bias="0.205"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="onaylalottie.json"
+                        app:lottie_loop="true"
+                        android:onClick="geometrikOrtalama"/>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieKaldirGeometrik"
+                        android:layout_width="95dp"
+                        android:layout_height="95dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextGeometrik"
+                        app:layout_constraintVertical_bias="0.072"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="remove.json"
+                        app:lottie_loop="true"
+                        android:onClick="clearEditTexts"/>
+
+                    <TextView
+                        android:id="@+id/geometrikSonucTV"
+                        android:layout_width="184dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="124dp"
+                        android:gravity="center"
+                        android:text="Sonuc : 15.593234"
+                        android:textAlignment="center"
+                        app:layout_constraintEnd_toStartOf="@+id/lottieOnaylaGeometrik"
+                        app:layout_constraintHorizontal_bias="0.613"
+                        app:layout_constraintStart_toEndOf="@+id/lottieKaldirGeometrik"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextGeometrik" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/diziGoster5"
+                android:layout_width="350dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="500dp"
+                android:layout_marginLeft="-330dp"
+                android:textAlignment="center"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/standartSFullLY"
+                android:layout_width="300dp"
+                android:layout_height="450dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/ui6">
+
+                <Button
+                    android:id="@+id/standartSBG"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="35dp"
+                    android:background="@drawable/ss"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.568"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.064"
+                    app:srcCompat="@drawable/ss"
+                    android:onClick="standartOnclik"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/standartSOptionsLY"
+                    android:layout_width="300dp"
+                    android:layout_height="250dp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/standartSBG"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <EditText
+                        android:id="@+id/editTextStandartS"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:inputType="numberDecimal|numberSigned"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.19" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieOnaylaStandartS"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginStart="72dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="36dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/lottieKaldirStandartS"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextStandartS"
+                        app:layout_constraintVertical_bias="0.205"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="onaylalottie.json"
+                        app:lottie_loop="true"
+                        android:onClick="standartSapma"/>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieKaldirStandartS"
+                        android:layout_width="95dp"
+                        android:layout_height="95dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextStandartS"
+                        app:layout_constraintVertical_bias="0.072"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="remove.json"
+                        app:lottie_loop="true"
+                        android:onClick="clearEditTexts"/>
+
+                    <TextView
+                        android:id="@+id/standartSSonucTV"
+                        android:layout_width="184dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="124dp"
+                        android:gravity="center"
+                        android:text="Sonuc : 15.593234"
+                        android:textAlignment="center"
+                        app:layout_constraintEnd_toStartOf="@+id/lottieOnaylaStandartS"
+                        app:layout_constraintHorizontal_bias="0.613"
+                        app:layout_constraintStart_toEndOf="@+id/lottieKaldirStandartS"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextStandartS" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/diziGoster6"
+                android:layout_width="350dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="500dp"
+                android:layout_marginLeft="-330dp"
+                android:textAlignment="center"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/orneklemVFullLY"
+                android:layout_width="300dp"
+                android:layout_height="450dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/ui6">
+
+                <Button
+                    android:id="@+id/orneklemVBG"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="35dp"
+                    android:background="@drawable/ov"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.568"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.064"
+                    app:srcCompat="@drawable/ov"
+                    android:onClick="orneklemOnclik"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/orneklemVOptionsLY"
+                    android:layout_width="300dp"
+                    android:layout_height="250dp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/orneklemVBG"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <EditText
+                        android:id="@+id/editTextOrneklem"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:inputType="numberDecimal|numberSigned"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.19" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieOnaylaOrneklem"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginStart="72dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="36dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/lottieKaldirOrneklem"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextOrneklem"
+                        app:layout_constraintVertical_bias="0.205"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="onaylalottie.json"
+                        app:lottie_loop="true"
+                        android:onClick="orneklemVaryansi"/>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieKaldirOrneklem"
+                        android:layout_width="95dp"
+                        android:layout_height="95dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextOrneklem"
+                        app:layout_constraintVertical_bias="0.072"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="remove.json"
+                        app:lottie_loop="true"
+                        android:onClick="clearEditTexts"/>
+
+                    <TextView
+                        android:id="@+id/orneklemSonucTV"
+                        android:layout_width="184dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="124dp"
+                        android:gravity="center"
+                        android:text="Sonuc : 15.593234"
+                        android:textAlignment="center"
+                        app:layout_constraintEnd_toStartOf="@+id/lottieOnaylaOrneklem"
+                        app:layout_constraintHorizontal_bias="0.613"
+                        app:layout_constraintStart_toEndOf="@+id/lottieKaldirOrneklem"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextOrneklem" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/diziGoster7"
+                android:layout_width="350dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="500dp"
+                android:layout_marginLeft="-330dp"
+                android:textAlignment="center"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/degisimKFullLY"
+                android:layout_width="300dp"
+                android:layout_height="450dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/ui6">
+
+                <Button
+                    android:id="@+id/degisimKBG"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="35dp"
+                    android:background="@drawable/dk"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.568"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.064"
+                    app:srcCompat="@drawable/dk"
+                    android:onClick="degisimOnclik"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/degisimKOptionsLY"
+                    android:layout_width="300dp"
+                    android:layout_height="250dp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/degisimKBG"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <EditText
+                        android:id="@+id/editTextDegisimK"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:inputType="numberDecimal|numberSigned"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.19" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieOnaylaDegisimK"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginStart="72dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="36dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/lottieKaldirDegisimK"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextDegisimK"
+                        app:layout_constraintVertical_bias="0.205"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="onaylalottie.json"
+                        app:lottie_loop="true"
+                        android:onClick="degisimKatsatisi"/>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieKaldirDegisimK"
+                        android:layout_width="95dp"
+                        android:layout_height="95dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextDegisimK"
+                        app:layout_constraintVertical_bias="0.072"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="remove.json"
+                        app:lottie_loop="true"
+                        android:onClick="clearEditTexts"/>
+
+                    <TextView
+                        android:id="@+id/degisimKSonucTV"
+                        android:layout_width="184dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="124dp"
+                        android:gravity="center"
+                        android:text="Sonuc : 15.593234"
+                        android:textAlignment="center"
+                        app:layout_constraintEnd_toStartOf="@+id/lottieOnaylaDegisimK"
+                        app:layout_constraintHorizontal_bias="0.613"
+                        app:layout_constraintStart_toEndOf="@+id/lottieKaldirDegisimK"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextDegisimK" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/diziGoster8"
+                android:layout_width="350dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="500dp"
+                android:layout_marginLeft="-330dp"
+                android:textAlignment="center"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/carpiklikFullLY"
+                android:layout_width="300dp"
+                android:layout_height="450dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/ui6">
+
+                <Button
+                    android:id="@+id/carpiklikBG"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="35dp"
+                    android:background="@drawable/carpiklik"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.568"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.064"
+                    app:srcCompat="@drawable/carpiklik"
+                    android:onClick="carpiklikOnclik"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/carpiklikOptionsLY"
+                    android:layout_width="300dp"
+                    android:layout_height="250dp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/carpiklikBG"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <EditText
+                        android:id="@+id/editTextCarpiklik"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:inputType="numberDecimal|numberSigned"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.19" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieOnaylaCarpiklik"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginStart="72dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="36dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/lottieKaldirCarpiklik"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextCarpiklik"
+                        app:layout_constraintVertical_bias="0.205"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="onaylalottie.json"
+                        app:lottie_loop="true"
+                        android:onClick="carpiklikOlcutu"/>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieKaldirCarpiklik"
+                        android:layout_width="95dp"
+                        android:layout_height="95dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextCarpiklik"
+                        app:layout_constraintVertical_bias="0.072"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="remove.json"
+                        app:lottie_loop="true"
+                        android:onClick="clearEditTexts"/>
+
+                    <TextView
+                        android:id="@+id/carpiklikSonucTV"
+                        android:layout_width="184dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="124dp"
+                        android:gravity="center"
+                        android:text="Sonuc : 15.593234"
+                        android:textAlignment="center"
+                        app:layout_constraintEnd_toStartOf="@+id/lottieOnaylaCarpiklik"
+                        app:layout_constraintHorizontal_bias="0.613"
+                        app:layout_constraintStart_toEndOf="@+id/lottieKaldirCarpiklik"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextCarpiklik" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/diziGoster9"
+                android:layout_width="350dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="500dp"
+                android:layout_marginLeft="-330dp"
+                android:textAlignment="center"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/basiklikOFullLY"
+                android:layout_width="300dp"
+                android:layout_height="450dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/ui6">
+
+                <Button
+                    android:id="@+id/basiklikOBG"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="35dp"
+                    android:background="@drawable/bo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.568"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.064"
+                    app:srcCompat="@drawable/bo"
+                    android:onClick="basiklikOnclik"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/basiklikOOptionsLY"
+                    android:layout_width="300dp"
+                    android:layout_height="250dp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/basiklikOBG"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <EditText
+                        android:id="@+id/editTextBasiklik"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:inputType="numberDecimal|numberSigned"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.19" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieOnaylaBasiklik"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginStart="72dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="36dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/lottieKaldirBasiklik"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextBasiklik"
+                        app:layout_constraintVertical_bias="0.205"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="onaylalottie.json"
+                        app:lottie_loop="true"
+                        android:onClick="basiklikOlcutu"/>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieKaldirBasiklik"
+                        android:layout_width="95dp"
+                        android:layout_height="95dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextBasiklik"
+                        app:layout_constraintVertical_bias="0.072"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="remove.json"
+                        app:lottie_loop="true"
+                        android:onClick="clearEditTexts"/>
+
+                    <TextView
+                        android:id="@+id/basiklikSonucTV"
+                        android:layout_width="184dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="124dp"
+                        android:gravity="center"
+                        android:text="Sonuc : 15.593234"
+                        android:textAlignment="center"
+                        app:layout_constraintEnd_toStartOf="@+id/lottieOnaylaBasiklik"
+                        app:layout_constraintHorizontal_bias="0.613"
+                        app:layout_constraintStart_toEndOf="@+id/lottieKaldirBasiklik"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextBasiklik" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/diziGoster10"
+                android:layout_width="350dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="500dp"
+                android:layout_marginLeft="-330dp"
+                android:textAlignment="center"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/kucuktenBFullLY"
+                android:layout_width="300dp"
+                android:layout_height="450dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/ui6">
+
+                <Button
+                    android:id="@+id/kucuktenBBG"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="35dp"
+                    android:background="@drawable/kbs"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.568"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.064"
+                    app:srcCompat="@drawable/kbs"
+                    android:onClick="kucukBOnclik"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/kucuktenBOptionsLY"
+                    android:layout_width="300dp"
+                    android:layout_height="250dp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/kucuktenBBG"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <EditText
+                        android:id="@+id/editTextKucuktenB"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:inputType="numberDecimal|numberSigned"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.19" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieOnaylaKucuktenB"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginStart="72dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="36dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/lottieKaldirKucuktenB"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextKucuktenB"
+                        app:layout_constraintVertical_bias="0.205"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="onaylalottie.json"
+                        app:lottie_loop="true"
+                        android:onClick="kucuktenBuyugeSirala"/>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieKaldirKucuktenB"
+                        android:layout_width="95dp"
+                        android:layout_height="95dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextKucuktenB"
+                        app:layout_constraintVertical_bias="0.072"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="remove.json"
+                        app:lottie_loop="true"
+                        android:onClick="clearEditTexts"/>
+
+                    <TextView
+                        android:id="@+id/kucutenBSonucTV"
+                        android:layout_width="184dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="124dp"
+                        android:gravity="center"
+                        android:text="Sonuc : 15.593234"
+                        android:textAlignment="center"
+                        app:layout_constraintEnd_toStartOf="@+id/lottieOnaylaKucuktenB"
+                        app:layout_constraintHorizontal_bias="0.613"
+                        app:layout_constraintStart_toEndOf="@+id/lottieKaldirKucuktenB"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextKucuktenB" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/diziGoster11"
+                android:layout_width="350dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="500dp"
+                android:layout_marginLeft="-330dp"
+                android:textAlignment="center"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/buyuktenKFullLY"
+                android:layout_width="300dp"
+                android:layout_height="450dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/ui6">
+
+                <Button
+                    android:id="@+id/buyuktenKBG"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="35dp"
+                    android:background="@drawable/bks"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.568"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.064"
+                    app:srcCompat="@drawable/bks"
+                    android:onClick="buyukKOnclik"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/buyuktenKOptionsLY"
+                    android:layout_width="300dp"
+                    android:layout_height="250dp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/buyuktenKBG"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <EditText
+                        android:id="@+id/editTextBuyuktenK"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:textAlignment="center"
+                        android:gravity="center"
+                        android:inputType="numberDecimal|numberSigned"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.19" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieOnaylabuyuktenK"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginStart="72dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="36dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/lottieKaldirBuyuktenK"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextBuyuktenK"
+                        app:layout_constraintVertical_bias="0.205"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="onaylalottie.json"
+                        app:lottie_loop="true"
+                        android:onClick="buyuktenKucugeSirala"/>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieKaldirBuyuktenK"
+                        android:layout_width="95dp"
+                        android:layout_height="95dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="12dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextBuyuktenK"
+                        app:layout_constraintVertical_bias="0.072"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="remove.json"
+                        app:lottie_loop="true"
+                        android:onClick="clearEditTexts"/>
+
+                    <TextView
+                        android:id="@+id/buyuktenKSonucTV"
+                        android:layout_width="184dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="124dp"
+                        android:gravity="center"
+                        android:text="Sonuc : 15.593234"
+                        android:textAlignment="center"
+                        app:layout_constraintEnd_toStartOf="@+id/lottieOnaylabuyuktenK"
+                        app:layout_constraintHorizontal_bias="0.613"
+                        app:layout_constraintStart_toEndOf="@+id/lottieKaldirBuyuktenK"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextBuyuktenK" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/diziGoster12"
+                android:layout_width="350dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="500dp"
+                android:layout_marginLeft="-330dp"
+                android:textAlignment="center"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/kombinasFullLY"
+                android:layout_width="300dp"
+                android:layout_height="450dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/ui6">
+
+                <Button
+                    android:id="@+id/kombinasBG"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="35dp"
+                    android:background="@drawable/kombinas"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.568"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.064"
+                    app:srcCompat="@drawable/kombinas"
+                    android:onClick="kombinasOnclik"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/kombinasOptionsLY"
+                    android:layout_width="301dp"
+                    android:layout_height="271dp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/kombinasBG"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:visibility="visible">
+
+                    <EditText
+                        android:id="@+id/editTextKombinasN"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:hint="N"
+                        android:inputType="number"
+                        android:selectAllOnFocus="true"
+                        android:textAlignment="center"
+                        android:textColorHint="#000000"
+                        android:backgroundTint="#000000"
+                        android:textCursorDrawable="@android:color/holo_red_dark"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.068"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.22" />
+
+                    <EditText
+                        android:id="@+id/editTextKombinasR"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="20dp"
+                        android:backgroundTint="#000000"
+                        android:gravity="center"
+                        android:hint="R"
+                        android:inputType="number"
+                        android:selectAllOnFocus="true"
+                        android:textAlignment="center"
+                        android:textColorHint="#000000"
+                        android:textCursorDrawable="@android:color/holo_red_dark"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.873"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.22" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieOnaylaKombinas"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginStart="72dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="36dp"
+                        android:onClick="kombinasyon"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/lottieKaldirKombinas"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextKombinasN"
+                        app:layout_constraintVertical_bias="0.205"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="onaylalottie.json"
+                        app:lottie_loop="true" />
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieKaldirKombinas"
+                        android:layout_width="95dp"
+                        android:layout_height="95dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="12dp"
+                        android:onClick="clearEditTexts"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextKombinasN"
+                        app:layout_constraintVertical_bias="0.072"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="remove.json"
+                        app:lottie_loop="true" />
+
+                    <TextView
+                        android:id="@+id/kombinasSonucTV"
+                        android:layout_width="192dp"
+                        android:layout_height="42dp"
+                        android:layout_marginTop="124dp"
+                        android:gravity="center"
+                        android:text="Sonuc : 15.593234"
+                        android:textAlignment="center"
+                        app:layout_constraintEnd_toStartOf="@+id/lottieOnaylaKombinas"
+                        app:layout_constraintHorizontal_bias="0.613"
+                        app:layout_constraintStart_toEndOf="@+id/lottieKaldirKombinas"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextKombinasN" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/diziGoster13"
+                android:layout_width="350dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="500dp"
+                android:layout_marginLeft="-330dp"
+                android:textAlignment="center"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/permutasFullLY"
+                android:layout_width="300dp"
+                android:layout_height="450dp"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="65dp"
+                android:layout_marginBottom="1dp"
+                android:background="@drawable/ui6">
+
+                <Button
+                    android:id="@+id/permutasBG"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="35dp"
+                    android:background="@drawable/pemutas"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.568"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.064"
+                    app:srcCompat="@drawable/pemutas"
+                    android:onClick="permutasOnclik"/>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/permutasOptionsLY"
+                    android:layout_width="300dp"
+                    android:layout_height="250dp"
+                    android:visibility="invisible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/permutasBG"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:visibility="visible">
+
+                    <EditText
+                        android:id="@+id/editTextPermutasN"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="20dp"
+                        android:gravity="center"
+                        android:hint="N"
+                        android:inputType="number"
+                        android:selectAllOnFocus="true"
+                        android:textAlignment="center"
+                        android:textColorHint="#000000"
+                        android:backgroundTint="#000000"
+                        android:textCursorDrawable="@android:color/holo_red_dark"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.068"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.22" />
+
+                    <EditText
+                        android:id="@+id/editTextPermutasR"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginEnd="20dp"
+                        android:backgroundTint="#000000"
+                        android:gravity="center"
+                        android:hint="R"
+                        android:inputType="number"
+                        android:selectAllOnFocus="true"
+                        android:textAlignment="center"
+                        android:textColorHint="#000000"
+                        android:textCursorDrawable="@android:color/holo_red_dark"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.873"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.22" />
+
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieOnaylaPermutas"
+                        android:layout_width="75dp"
+                        android:layout_height="75dp"
+                        android:layout_marginStart="72dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="36dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/lottieKaldirPermutas"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextPermutasN"
+                        app:layout_constraintVertical_bias="0.205"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="onaylalottie.json"
+                        app:lottie_loop="true"
+                        android:onClick="permutasyon"/>
+
+                    <com.airbnb.lottie.LottieAnimationView
+                        android:id="@+id/lottieKaldirPermutas"
+                        android:layout_width="95dp"
+                        android:layout_height="95dp"
+                        android:layout_marginStart="28dp"
+                        android:layout_marginTop="12dp"
+                        android:onClick="clearEditTexts"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextPermutasN"
+                        app:layout_constraintVertical_bias="0.072"
+                        app:lottie_autoPlay="true"
+                        app:lottie_fileName="remove.json"
+                        app:lottie_loop="true" />
+
+                    <TextView
+                        android:id="@+id/permutasSonucTV"
+                        android:layout_width="184dp"
+                        android:layout_height="35dp"
+                        android:layout_marginTop="124dp"
+                        android:gravity="center"
+                        android:text="Sonuc : 15.593234"
+                        android:textAlignment="center"
+                        app:layout_constraintEnd_toStartOf="@+id/lottieOnaylaPermutas"
+                        app:layout_constraintHorizontal_bias="0.613"
+                        app:layout_constraintStart_toEndOf="@+id/lottieKaldirPermutas"
+                        app:layout_constraintTop_toBottomOf="@+id/editTextPermutasN" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/diziGoster14"
+                android:layout_width="350dp"
+                android:layout_height="170dp"
+                android:layout_marginTop="500dp"
+                android:layout_marginLeft="-330dp"
+                android:textAlignment="center"/>
+
+
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+
+
+
+
+
+
+
+</FrameLayout>
